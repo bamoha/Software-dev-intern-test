@@ -1,4 +1,4 @@
-displayRandomQuote = function () {
+displayRandomQuote = function(){
     var quotes = {
         0: "All computers wait at the same speed.",
         1: "A good programmer looks both ways before crossing a one-way street.",
@@ -8,7 +8,10 @@ displayRandomQuote = function () {
         5: "Without requirements or design, programming is the art of adding bugs to an empty 'text' file."
 
     }
-    var rand = Math.floor(Math.random() * Object.keys(quotes).length);
-    console.log(quotes[rand]);
-}
+    for(let i = 0; i<Object.keys(quotes).length; ++i){
+        if(i%2 !== 0){
+           console.log(quotes[i])
+        }
+    }
+  };
 displayRandomQuote();
