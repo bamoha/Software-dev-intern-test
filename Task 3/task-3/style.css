@@ -1,0 +1,73 @@
+/* I used Flexbox to handle its responsiveness */
+
+#wrapper{
+    background: aliceblue;
+    margin: 30px auto ;
+    padding: 30px;
+    font-size: 14px;
+    width:100%;
+    max-width:500px;
+    box-sizing: border-box;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    padding: 13px 0;
+    color: #2090c6;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+input {
+    height: 18px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 10px #444;
+    -moz-box-shadow: 0 0 10px #444;
+    box-shadow: 0 0 10px #444;
+    border: 1px solid #fff;
+}
+ 
+textarea {
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 10px #444;
+    -moz-box-shadow: 0 0 10px #444;
+    box-shadow: 0 0 10px #444;
+}
+
+input#submit {
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    padding: 0;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    border: 1px solid #000;
+    background: #000;
+    background-image: #2090c6;
+    opacity: 0.5;
+}
+ 
+input#submit:hover {
+    color: #ccc;
+    cursor: pointer;
+    opacity: 0.8;
+}
