@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center; margin: 50px;">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+
+<div id="map">
+  
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">SN</th>
+      <th scope="col">Name</th>
+      <th scope="col">Capital</th>
+      <th scope="col">Population</th>
+      <th scope="col">Timezones</th>
+      <th scope="col">Flag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let country of countries let i = index">
+      <th scope="row">{{i + 1}}</th>
+      <td>{{country.name}}</td>
+      <td>{{country.capital}}</td>
+      <td>{{country.population}}</td>
+      <td>{{country.timezones}}</td>
+      <td><img height="20" width="40" src="{{country.flag}}"></td>
+    </tr>
+  </tbody>
+</table>
+
